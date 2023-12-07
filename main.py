@@ -2,12 +2,12 @@
 # 2019
 
 import threading
-import Dobot
+from Dobot import DoBotArm
 
 #Example of bundling functions
 def functions():
     homeX, homeY, homeZ = 250, 0, 50
-    dobot = Dobot.DoBotArm(homeX, homeY, homeZ) #Create DoBot Class Object with home position x,y,z
+    dobot = DoBotArm(homeX, homeY, homeZ) #Create DoBot Class Object with home position x,y,z
     dobot.moveArmXY(250, 100)
     dobot.pickToggle(-40)
     dobot.toggleSuction()
@@ -19,7 +19,7 @@ def functions():
 
 def manualMode():
     homeX, homeY, homeZ = 250, 0, 50
-    dobot = Dobot.DoBotArm(homeX, homeY, homeZ) #Create DoBot Class Object with home position x,y,z
+    dobot = DoBotArm(homeX, homeY, homeZ) #Create DoBot Class Object with home position x,y,z
     print("1- Go Home (250, 0, 50)")
     print("2- Move X,Y")
     print("3- pick")
@@ -47,7 +47,7 @@ def manualMode():
 
 def autoMode():
     homeX, homeY, homeZ = 250, 0, 50
-    dobot = Dobot.DoBotArm(homeX, homeY, homeZ)
+    dobot = DoBotArm(homeX, homeY, homeZ)
     dobot.moveMotor()
     dobot.goPick((250, 50, -30), (150, 100, -30))
     # dobot.setGrip(False)
