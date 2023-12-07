@@ -591,7 +591,7 @@ def load():
     elif platform.system() == "Darwin":
         return CDLL("./Dobot/libDobotDll.dylib",  RTLD_GLOBAL)
     elif platform.system() == "Linux":
-        return cdll.loadLibrary("./DobotlibDobotDll.so")
+        return cdll.loadLibrary("./Dobot/libDobotDll.so")
 
 
 def dSleep(ms):
