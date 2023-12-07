@@ -1,5 +1,5 @@
 # AASTMT | College of Artificial Intelligence
-## Dobot Python SDK ![](https://img.shields.io/badge/Version-1.0-red)
+## Dobot Python API ![](https://img.shields.io/badge/Version-1.0-red)
 ---
 ## This SDK is Provided By:
 - _Dr. Omar Shalash_
